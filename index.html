@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/istockphoto-1242913132-2048x2048.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/SonaliBagLogo.jpg" type="image/x-icon">
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="css/raw.githubusercontent.com_jlmakes_scrollreveal_master_dist_scrollreveal.min.js">
     <title>Sonali Bag</title>
 
 </head>
 <body>
 
    <!-- Preloader -->
-   <div id="loading">
+   <!-- <div id="loading">
       <img src="image-gif/Spinner-1s-200px (1).gif" alt="loader">
   
-  </div>
-
-
+  </div> -->
 
    <!-- Navigation -->
 
@@ -27,10 +27,10 @@
        <div class="container">
            <!-- <a href="index.html" class="navbar-brand">Sonali Bag</a> -->
            <a href="#showcase" class="navbar-brand">
-            <img src="img/istockphoto-1242913132-2048x2048.jpg" class="img-fluid" 
+            <img src="img/SonaliBagLogo.jpg" class="img-fluid" 
             width="30px" height="30px" alt="Logo">
 
-            <h3 class="d-inline align-middle" >Sonali Bag</h3>
+            <h3 class="d-inline align-middle ml-2" >Sonali Bag</h3>
            </a>
 
            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
@@ -53,7 +53,7 @@
            </li>
 
            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blogs</a>
+              <a class="nav-link" href="blog.html">Gallery</a>
            </li>
 
            <li class="nav-item">
@@ -165,7 +165,7 @@
  <section id="homeicon" class="py-5 text-center">
     <div class="container">
        <div class="row">
-         <div class="col-md-4 my-3">
+         <div class="col-md-4 my-3 scrollEco">
             <i class="fa fa-gears"></i>
             <h3 class="my-4 text-primary">Eco Friendly</h3>
             <p class="m-2 text-justify">The Sonali bags made from jute polymers, are 100% biodegradable and capable of your everyday polyethylene bags for a more eco-friendly and responsible lifestyle.The bioplastic jute bags are entirely recyclable. After buried in soil, within three months, it started the decomposition process.</p>
@@ -209,14 +209,14 @@
  <section id="homeInfo" class="py-5">
     <div class="container">
        <div class="row">
-          <div class="col-md-6 align-self-center">
+          <div class="col-md-6 align-self-center scrollMessage">
              <h2>Message from Scientist</h2>
              <h6>Prof. Dr. Mubarak Ahmad Khan</h6>
              <p>Jute polybag or Sonali bag from jute cellulose has come far after the invention. The ‘Sonali bag’ name was given by Prime Minister Sheikh Hasina which aided in country branding as well as branding the bag itself.</p>
 
              <a href="https://www.textiletoday.com.bd/dr-mubarak-ahmad-khan-golden-fiber-jute-value-chain/" target="_blank" class="btn btn-outline-dark">Read More</a>
           </div>
-          <div class="col-md-6 mt-sm-3 mt-3 mt-md-0">
+          <div class="col-md-6 mt-sm-3 mt-3 mt-md-0 scrollImage">
               <img src="img/Dr Mubarak1.jpg" alt="pc" class="img-fluid rounded">
 
           </div>
@@ -425,7 +425,7 @@
                  <li style="font-size:16px ;"><a href="index.html">Home</a></li>
                  <li style="font-size:16px ;"><a href="about.html">About us</a></li>
                  <li style="font-size:16px ;"><a href="services.html">Services</a></li>
-                 <li style="font-size:16px ;"><a href="blog.html">Blogs</a></li>
+                 <li style="font-size:16px ;"><a href="blog.html">Gallery</a></li>
                  <li style="font-size:16px ;"><a href="contact.html">Contact</a></li>
                 </ul>
          </div>
@@ -462,7 +462,6 @@
       </div>
 </section>
 
-
 <!-- PreLoader Script Code: -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"</script>
 
@@ -473,8 +472,6 @@
 $(window).on("load",function(){
         $("#loading").fadeOut(4000);
     })
-
-
 
    //  JavaScript for Scroll up Button
 
@@ -503,6 +500,10 @@ $(window).on("load",function(){
 
 </script>
 
+<!-- Scroll Reveal -->
+<!-- <script src="js/raw.githubusercontent.com_jlmakes_scrollreveal_master_dist_scrollreveal.js"></script> -->
+
+
    <!-- <script>
       var preloader=document.getElementById("#loading");
 
@@ -512,16 +513,31 @@ $(window).on("load",function(){
    </script>  -->
 
 
+   <!-- GSAP -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script> -->
+
+   <!-- ANIMATION -->
+   
+   <script>
+       /*TITLE Y IMG*/
+          //gsap.from('.gsapEcho', {opacity: 0, duration: 2.9, delay:1, x:-90})
+          //gsap.from('.gsapBio', {opacity: 0, duration: 2.9, delay:1, y:-90})
+          //gsap.from('.gsapAffor', {opacity: 0, duration: 2.9, delay:1, x:+90})
+      //  gsap.from('.home__img', {opacity: 0, duration: 1, delay:1, x: 100})
+      //  gsap.from('.home__information', {opacity: 0, duration: 1, delay:1.2, y: -30})
+
+       /*BOX*/
+       //gsap.from('.scrollMessage', {opacity: 0, duration: 3.5, delay:2.3, x: -90})
+       //gsap.from('.scrollImage', {opacity: 0, duration: 3.5, delay:2.4, x: +90})
+   </script>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
     
-
-    
-
-
 </body>
 </html>
 

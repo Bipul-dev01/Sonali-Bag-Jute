@@ -135,10 +135,8 @@ $dark-overlay:rgba(0,0,0,0.4);
     
   }
   .carousel-img-1{
-    background: url('../img/prime-minister (1).jpeg');
-    background-size: cover;
-   
-    
+    background: url('../images/Jute-Tin.jpg');
+    background-size: cover; 
   }
   .carousel-img-2{
     background: url('../img/Mubarak-Ahmad-Khan.jpg');
@@ -461,7 +459,7 @@ footer p{
   position: fixed;
   bottom: 20px;
   right: 40px;
-  z-index: 99;
+  z-index: 99999;
   border: none;
   color: red;
   background: #00abff;
@@ -1194,6 +1192,7 @@ footer p{
         text-decoration: underline;
         text-decoration-color: #f00;
         text-decoration-thickness: 2.5px;
+        background: #181818;
         
        
       }
